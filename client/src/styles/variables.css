@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --accent: #7fcdff;
+  --accent-dim: rgba(127, 205, 255, 0.12);
+  --accent-glow: 0 0 20px rgba(127, 205, 255, 0.25);
+  --accent-text-glow: 0 0 12px rgba(127, 205, 255, 0.35);
+
+  --accent-light: #dff7ff;
+
+  --accent-purple: #8b5cf6;
+
+  /* Professional Accent Palette */
+  --accent-primary: #00f3ff;
+  --accent-secondary: #8b5cf6;
+  --status-success: #00fa9a;
+  --status-warning: #fbbf24;
+  --status-error: #f43f5e;
+
+  --bg-primary: #080c18;
+  --bg-secondary: #0e1428;
+  --bg-tertiary: #141b36;
+  --bg-elevated: #1a2340;
+
+  --text-primary: #f0f4ff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(127, 205, 255, 0.25);
+  --glass-blur: blur(24px);
+
+  /* Typography */
+  --font-display: 'Candal', sans-serif;
+  --font-sub: 'Lora', serif;
+  --font-body: 'PT Serif', serif;
+
+  /* Spacing */
+  --section-pad-y: 80px;
+  --section-pad-x: 24px;
+  --card-pad: 32px;
+  --card-radius: 16px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+
+  --btn-primary-text: #0f172a;
+  --overlay-gradient: linear-gradient(180deg, rgba(8,12,24,0.65) 0%, rgba(8,12,24,0.3) 50%, rgba(8,12,24,0.75) 100%);
+  --nav-bg: rgba(8, 12, 24, 0.82);
+  --nav-bg-mobile: rgba(8, 12, 24, 0.96);
+}
+
+[data-theme="light"] {
+  --accent-primary: #0284c7;
+  --accent-secondary: #4f46e5;
+  --status-success: #10b981;
+  --status-warning: #d97706;
+  --status-error: #e11d48;
+
+  --bg-primary: #f8fafd;
+  --bg-secondary: #f0f4fa;
+  --bg-tertiary: #e8eef6;
+  --bg-elevated: #dce4f0;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-bg-hover: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.06);
+  --glass-border-hover: rgba(127, 205, 255, 0.3);
+
+  --accent-glow: 0 0 20px rgba(127, 205, 255, 0.12);
+  --accent-text-glow: 0 0 12px rgba(127, 205, 255, 0.2);
+
+  --btn-primary-text: #0f172a;
+  --overlay-gradient: linear-gradient(180deg, rgba(248,250,253,0.5) 0%, rgba(248,250,253,0.2) 50%, rgba(248,250,253,0.6) 100%);
+  --nav-bg: rgba(248, 250, 253, 0.82);
+  --nav-bg-mobile: rgba(248, 250, 253, 0.96);
+}

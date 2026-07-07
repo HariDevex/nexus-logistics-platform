@@ -1,0 +1,185 @@
+/* ── Hero ── */
+.hero {
+  padding-top: 140px;
+  position: relative;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.heroText {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ── Metrics ── */
+.metricsSection {
+  background: var(--bg-secondary);
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.metricCard {
+  text-align: center;
+  padding: 32px 16px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--card-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color var(--duration-fast);
+}
+
+.metricCard:hover {
+  border-color: var(--glass-border-hover);
+}
+
+.metricValue {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--accent);
+  text-shadow: var(--accent-text-glow);
+}
+
+.metricLabel {
+  font-family: var(--font-sub);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ── Pillars ── */
+.pillarsSection {
+  background: var(--bg-primary);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.pillarCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.pillarIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.pillarTitle {
+  font-family: var(--font-sub);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.pillarDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ── Tech / List ── */
+.techContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+}
+
+.techTag {
+  display: inline-block;
+  font-family: var(--font-sub);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.techTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--text-primary);
+}
+
+.techText {
+  color: rgba(240, 244, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.listSection {
+  background: var(--bg-secondary);
+}
+
+.listGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.listCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 24px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: border-color var(--duration-fast);
+}
+
+.listCard:hover {
+  border-color: var(--glass-border-hover);
+}
+
+.listDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(127, 205, 255, 0.4);
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+  .listGrid {
+    grid-template-columns: 1fr;
+  }
+}

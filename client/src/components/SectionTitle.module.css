@@ -1,0 +1,36 @@
+.wrapper {
+  margin-bottom: 56px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.subtitle {
+  display: inline-block;
+  font-family: var(--font-sub);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: var(--text-primary);
+  max-width: 640px;
+}
+
+.center .title {
+  margin: 0 auto;
+}
+
+.light {
+  color: var(--text-primary);
+}

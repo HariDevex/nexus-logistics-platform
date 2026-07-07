@@ -1,0 +1,128 @@
+.hero {
+  padding-top: 140px;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroDesc {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.gridSection {
+  background: var(--bg-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+}
+
+.cardIcon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  flex-shrink: 0;
+}
+
+.featured .cardIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardSubtitle {
+  font-family: var(--font-sub);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cardTitle {
+  font-family: var(--font-sub);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.cardDesc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.cardHighlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.cardHighlights li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sub);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-top: 8px;
+  transition: gap var(--duration-fast);
+}
+
+.cardLink:hover {
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .featured .cardIcon {
+    width: 64px;
+    height: 64px;
+  }
+}
